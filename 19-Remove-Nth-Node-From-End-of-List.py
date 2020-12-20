@@ -43,4 +43,23 @@ class Solution(object):
                             return head
                         count2+=1
                         temp= temp.next
-            
+          
+        
+#Solution2: x2 performance
+        node1 = head
+        node2 = head
+        count = 1
+        while not node1.next == None:
+            if count > n:
+                node2 = node2.next
+            node1 = node1.next
+            count += 1
+        
+        if count == n:
+            return head.next
+        
+        if not node2.next.next == None:
+            node2.next = node2.next.next
+        else:
+            node2.next = None
+        return head
