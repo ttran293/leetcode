@@ -26,6 +26,9 @@ int main(){
 	cout<<"Expect 21: "<<blackjack(19,21)<<"\n";
 	cout<<"Expect 21: "<<blackjack(21,19)<<"\n";
 	cout<<"Expect 19: "<<blackjack(19,22)<<"\n";
+	cout<<"Expect 19: "<<blackjack(19,22)<<"\n";
+	cout<<"Expect 19: "<<blackjack(22,50)<<"\n";
+	cout<<"Expect 19: "<<blackjack(3,4)<<"\n";;
 
 
 }
